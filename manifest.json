@@ -1,9 +1,9 @@
 {
-  "id": "mermaid-defaults",
-  "name": "Mermaid Defaults",
+  "id": "mermaid-layout",
+  "name": "Mermaid Layout",
   "version": "1.0.0",
   "minAppVersion": "1.5.0",
-  "description": "Vault-wide Mermaid defaults: ELK layout with right-angle edges, plus spacing settings.",
+  "description": "Vault-wide Mermaid layout settings: the ELK engine with right-angle edges, plus spacing.",
   "author": "jaskaran-sethy",
   "isDesktopOnly": false
 }

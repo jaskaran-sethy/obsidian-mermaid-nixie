@@ -1,6 +1,6 @@
-# Mermaid Defaults
+# Mermaid Layout
 
-An Obsidian plugin that sets vault-wide defaults for Mermaid diagrams: the ELK layout engine with right-angle edges, plus spacing settings.
+An Obsidian plugin that sets how Mermaid diagrams are laid out across your vault: the ELK layout engine with right-angle edges, plus spacing settings.
 
 ## Features
 
@@ -11,7 +11,7 @@ An Obsidian plugin that sets vault-wide defaults for Mermaid diagrams: the ELK l
 - **Merge parallel edges** toggle.
 - A command to re-render diagrams in open notes.
 
-These are only defaults. A single diagram can still override them on its first line:
+These settings are only defaults. A single diagram can still override them on its first line:
 
 ```
 %%{init: {"layout": "dagre"}}%%
@@ -19,7 +19,7 @@ These are only defaults. A single diagram can still override them on its first l
 
 ## Install
 
-Download `main.js`, `elk.js` and `manifest.json` from the [latest release](../../releases/latest) into `<vault>/.obsidian/plugins/mermaid-defaults/`, then enable **Mermaid Defaults** under *Settings → Community plugins*.
+Download `main.js`, `elk.js` and `manifest.json` from the [latest release](../../releases/latest) into `<vault>/.obsidian/plugins/mermaid-layout/`, then enable **Mermaid Layout** under *Settings → Community plugins*.
 
 `elk.js` (~5 MB) is loaded only the first time a diagram needs ELK.
 
