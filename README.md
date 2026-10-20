@@ -2,6 +2,8 @@
 
 An Obsidian plugin that sets how Mermaid diagrams are laid out across your vault: the ELK layout engine with right-angle edges, plus spacing settings.
 
+![The same diagram with Mermaid's default Dagre layout and with ELK](screenshots/desktop-3-compare.png)
+
 ## Features
 
 - **Layout engine:** ELK (right angles, fewest bends) or Dagre (Mermaid's default).
@@ -11,11 +13,20 @@ An Obsidian plugin that sets how Mermaid diagrams are laid out across your vault
 - **Merge parallel edges** toggle.
 - A command to re-render diagrams in open notes.
 
+![Mermaid Nixie settings](screenshots/desktop-4-settings.png)
+
 These settings are only defaults. A single diagram can still override them on its first line:
 
 ```
 %%{init: {"layout": "dagre"}}%%
 ```
+
+It works on mobile too. Before and after:
+
+<p>
+  <img src="screenshots/mobile-2-before.png" width="240" alt="Dagre layout on a phone">
+  <img src="screenshots/mobile-1.png" width="240" alt="ELK layout with Mermaid Nixie on a phone">
+</p>
 
 ## Install
 
