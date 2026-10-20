@@ -1,0 +1,14 @@
+{
+  "name": "mermaid-defaults",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs"
+  },
+  "dependencies": {
+    "@mermaid-js/layout-elk": "0.2.3"
+  },
+  "devDependencies": {
+    "esbuild": "0.25.0"
+  }
+}
