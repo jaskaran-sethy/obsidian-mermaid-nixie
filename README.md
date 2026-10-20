@@ -30,9 +30,9 @@ It works on mobile too. Before and after:
 
 ## Install
 
-Download `main.js`, `elk.js` and `manifest.json` from the [latest release](../../releases/latest) into `<vault>/.obsidian/plugins/mermaid-nixie/`, then enable **Mermaid Nixie** under *Settings → Community plugins*.
+Download `main.js` and `manifest.json` from the [latest release](../../releases/latest) into `<vault>/.obsidian/plugins/mermaid-nixie/`, then enable **Mermaid Nixie** under *Settings → Community plugins*.
 
-`elk.js` (~5 MB) is loaded only the first time a diagram needs ELK.
+ELK is bundled into `main.js` (~5 MB) and only runs the first time a diagram needs it.
 
 ## Build
 
@@ -41,8 +41,8 @@ npm install
 npm run build
 ```
 
-The build writes `dist/main.js` and `dist/elk.js`.
+The build writes `dist/main.js`. Pushing a version tag (e.g. `1.0.2`) builds the plugin on GitHub Actions, attests `main.js` and publishes the release.
 
 ## License
 
-MIT. `elk.js` bundles [@mermaid-js/layout-elk](https://github.com/mermaid-js/mermaid) (MIT) and [elkjs](https://github.com/kieler/elkjs) (EPL-2.0).
+MIT. `main.js` bundles [@mermaid-js/layout-elk](https://github.com/mermaid-js/mermaid) (MIT) and [elkjs](https://github.com/kieler/elkjs) (EPL-2.0).

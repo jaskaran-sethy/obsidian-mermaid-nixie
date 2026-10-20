@@ -1,4 +1,6 @@
 import { Plugin, PluginSettingTab, Setting, loadMermaid, debounce } from "obsidian";
+// The ELK bundle as source text (see build.mjs). Obsidian only installs main.js, so it lives in here.
+import ELK_SOURCE from "elk-source";
 
 const DEFAULTS = {
   layout: "elk",
@@ -102,13 +104,12 @@ export default class MermaidNixie extends Plugin {
     this.syncElk();
   }
 
-  // elk.js is ~5 MB, so it is only read and evaluated the first time a diagram needs ELK.
+  // The ELK bundle is ~5 MB, so it is kept as a string and only evaluated the first time a diagram needs ELK.
   loadElk() {
     if (!this.elkPromise) {
       this.elkPromise = (async () => {
-        const code = await this.app.vault.adapter.read(`${this.manifest.dir}/elk.js`);
         const module = { exports: {} };
-        new Function("module", "exports", code)(module, module.exports);
+        new Function("module", "exports", ELK_SOURCE)(module, module.exports);
         this.elk = module.exports;
         this.syncElk();
         return this.elk;
