@@ -42,10 +42,10 @@ const ELK_ALGORITHMS = [
   ["elk.sporeOverlap", "elk.sporeOverlap"],
 ];
 
-export default class MermaidLayout extends Plugin {
+export default class MermaidNixie extends Plugin {
   async onload() {
     this.settings = Object.assign({}, DEFAULTS, await this.loadData());
-    this.addSettingTab(new MermaidLayoutTab(this.app, this));
+    this.addSettingTab(new MermaidNixieTab(this.app, this));
     this.addCommand({
       id: "rerender",
       name: "Re-render diagrams in open notes",
@@ -137,7 +137,7 @@ export default class MermaidLayout extends Plugin {
   }
 }
 
-class MermaidLayoutTab extends PluginSettingTab {
+class MermaidNixieTab extends PluginSettingTab {
   constructor(app, plugin) {
     super(app, plugin);
     this.plugin = plugin;

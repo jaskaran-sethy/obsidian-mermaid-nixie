@@ -1,6 +1,6 @@
 {
-  "id": "mermaid-layout",
-  "name": "Mermaid Layout",
+  "id": "mermaid-nixie",
+  "name": "Mermaid Nixie",
   "version": "1.0.0",
   "minAppVersion": "1.5.0",
   "description": "Vault-wide Mermaid layout settings: the ELK engine with right-angle edges, plus spacing.",

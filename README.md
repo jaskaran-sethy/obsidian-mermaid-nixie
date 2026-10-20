@@ -1,4 +1,4 @@
-# Mermaid Layout
+# Mermaid Nixie
 
 An Obsidian plugin that sets how Mermaid diagrams are laid out across your vault: the ELK layout engine with right-angle edges, plus spacing settings.
 
@@ -19,7 +19,7 @@ These settings are only defaults. A single diagram can still override them on it
 
 ## Install
 
-Download `main.js`, `elk.js` and `manifest.json` from the [latest release](../../releases/latest) into `<vault>/.obsidian/plugins/mermaid-layout/`, then enable **Mermaid Layout** under *Settings → Community plugins*.
+Download `main.js`, `elk.js` and `manifest.json` from the [latest release](../../releases/latest) into `<vault>/.obsidian/plugins/mermaid-nixie/`, then enable **Mermaid Nixie** under *Settings → Community plugins*.
 
 `elk.js` (~5 MB) is loaded only the first time a diagram needs ELK.
 
