@@ -3,10 +3,12 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "node build.mjs"
+    "build": "node build.mjs",
+    "analyze": "node analyze.mjs"
   },
   "dependencies": {
-    "@mermaid-js/layout-elk": "0.2.3"
+    "@mermaid-js/layout-elk": "0.2.3",
+    "elkjs": "0.9.3"
   },
   "devDependencies": {
     "esbuild": "0.25.0"
