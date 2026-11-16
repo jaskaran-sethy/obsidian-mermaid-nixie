@@ -1,5 +1,11 @@
 # Mermaid Nixie
 
+> [!WARNING]
+> **Mermaid Nixie is deprecated and no longer works.** Obsidian no longer supports Mermaid diagrams, so there is nothing left for this plugin to configure.
+> Version 1.1.1 is the final release: it does nothing except show this notice. Uninstall it from **Settings → Community plugins**. The plugin has been removed from Obsidian's community plugin directory and this repository is archived.
+>
+> The rest of this README describes how the plugin worked up to 1.1.0.
+
 An Obsidian plugin that sets how Mermaid diagrams are laid out across your vault: the ELK layout engine with right-angle edges, plus spacing settings.
 
 ![The same diagram with Mermaid's default Dagre layout and with ELK](screenshots/desktop-3-compare.png)
